@@ -279,7 +279,13 @@ function Get-DotNetVersion {
                 $releaseValueHolder = Get-ItemProperty "$key\v4\Full" -Name 'Release' -ErrorAction SilentlyContinue
                 If ( $releaseValueHolder -ne $null ) {
                     switch ($releaseValueHolder.Release) {
-                        381029 {"4.6"}
+                        394806 {"4.6.2"}
+                        394802 {"4.6.2"}
+                        394271 {"4.6.1"}
+                        394254 {"4.6.1"}
+                        393297 {"4.6"}
+                        393295 {"4.6"}
+                        381029 {"4.6 preview"}
                         379893 {"4.5.2"}
                         378758 {"4.5.1"}
                         378675 {"4.5.1"}
